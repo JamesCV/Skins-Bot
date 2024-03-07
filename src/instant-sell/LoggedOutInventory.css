@@ -1,0 +1,52 @@
+.newUserScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(27, 36, 48, 0) 0%,  /* #1B2430 with 0% transparency at the start */
+    rgba(27, 36, 48, 1) 100% /* #1B2430 with 100% opacity at the end */
+  );
+  font-family: "Space Grotesk" !important;
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.steambutton {
+  display: block;
+  width: 230px;
+  height: 45px;
+  line-height: 50px;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+.Header {
+  font-size: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Desc {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.signIn {
+  padding-top: 70px;
+  align-self: center;
+}

@@ -1,0 +1,345 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk";
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b2430;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 550px;
+  max-width: 550px;
+  height: 65%;
+  min-height: 550px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttonPrimary {
+  background-color: #007bff; /* Primary color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonSecondary {
+  background-color: transparent;
+  color: #007bff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.settingsHeader {
+  color: White;
+  font-family: "Space Grotesk";
+  font-weight: 900;
+  font-size: 24px;
+  background-color: #1b2430;
+  padding: 8px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: 2px solid #1a1c26;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 92%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.settingsButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  white-space: nowrap;
+  background-color: #1b2430;
+  width: 100%;
+  height: 45px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.settingsButtonText {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.cancel:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.cancel {
+  background-color: #ff1e1e;
+  box-shadow: 0 10px 27px rgba(255, 30, 30, 0.1), 0 -3px #c91717 inset, 0 2px #ff4747 inset!important;
+}
+
+.profilePicture {
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  width: 92%;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.modalHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 92%;
+  height: 100%;
+  background-color: #1a1c26;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.steamUsername {
+  align-self: flex-start;
+  white-space: nowrap;
+  padding-left: 20px;
+}
+
+.steamID {
+  font-size: 14px;
+  white-space: nowrap;
+  padding-left: 20px;
+  color: #808080;
+}
+
+.findTradeURL {
+  width: 70%;
+  align-self: flex-start;
+  white-space: nowrap;
+  padding-top: 10px;
+  align-self: center;
+  color: White;
+}
+
+.URLtext {
+  color: #d5cb14;
+}
+
+
+.tradeURLContainer {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.tradeConfigContainer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid White;
+  padding-top: 10px;
+  width: 90%;
+  align-self: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding-right: 50px; /* Make room for the button */
+  padding-left: 15px;
+  background-color: #1a1c26;
+  border-radius: 10px;
+}
+
+.tradeURLform {
+  background-color: #1b2430 !important;
+  color: White;
+  padding-left: 15px;
+  padding-right: 15px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.saveTradeURL {
+  position: relative;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  background-color: #00c74d;
+  box-shadow: 0 10px 27px #00ff0c1a,0 -3px #00913c inset,0 2px #35d87b inset!important;
+}
+
+.saveTradeURL:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.saveCryptoButton {
+  position: relative;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  background-color: #00c74d;
+  box-shadow: 0 10px 27px #00ff0c1a,0 -3px #00913c inset,0 2px #35d87b inset!important;
+}
+
+.saveCryptoButton:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+input::placeholder {
+  color: Grey; /* Change to your desired placeholder text color */
+}
+
+input:focus {
+  outline: none; /* Example: Red outline, 2 pixels wide */
+}
+
+.userDataContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.cryptoConfigContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  align-self: center;
+  border-top: 1px solid White;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cryptoInputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+
+.cryptoInput {
+  background-color: #1b2430 !important;
+  color: White;
+  padding-left: 15px;
+  padding-right: 15px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.cryptoDropDownHeader{
+  background-color: #1b2430;
+  height: 45px;
+  width: 100px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  padding: 8px;
+  justify-content: space-around;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.cryptoDropDownHeader:hover {
+  background-color: #212434;
+}
+
+.cryptoDropdown{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cryptoDropdownItem:hover {
+  background-color: #212434;
+}
+
+.cryptoDropdownItem {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  padding: 8px;
+  justify-content: space-around;
+}
+
+.cryptoDropdownIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.dropdownOptions {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1b2430;
+  border-radius: 8px;
+}
+
+.cryptoHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.tradeConfigHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.cryptoConfigText {
+  padding-bottom: 10px;
+}
+
+.tradeConfigText {
+  padding-bottom: 10px;
+}

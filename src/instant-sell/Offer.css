@@ -1,0 +1,436 @@
+.offerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 32%;
+  min-width: 390px;
+  max-width: 550px;
+  font-family: "Space Grotesk";
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.offerHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 52px;
+  min-height: 52px;
+  width: 100%;
+  background-color: #18232a;
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+  color: White;
+  padding-left: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: default;
+}
+
+.offerTitle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.offerText {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+  color: White;
+}
+
+.offerValue {
+  display: flex;
+  flex-direction: row;
+  color: #008001;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: default;
+}
+
+.cryptoThumbnail {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.paymentDesc {
+  color: Black;
+  font-weight: bold;
+}
+
+.cryptoProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.cryptoItemContainer {
+    height: 90px;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #1a1c26;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: "Space Grotesk";
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(28, 32, 36, 0.6), 0 6px 20px rgba(22, 26, 30, 0.7);
+
+}
+
+.cryptoItemContainer:hover {
+  border: 2px solid #1a1c26;
+  border-radius: 10px;
+  transform: translateY(-2px) scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.cryptoTitle {
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+  color: White;
+  align-self: center;
+  padding-left: 10px;
+}
+
+.offerWindow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: #18232a;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.paymentWindow {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  width: 100%;
+  overflow-y: scroll;
+  gap: 10px;
+}
+
+.tradeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  height: 280px;
+  width: 90%;
+  background-color: #1a1c26;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.cryptoAddressInput {
+  color: White;
+}
+
+.USDwindow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+  padding-top: 10px;
+  border-top: 2px solid White;
+  border-style: ridge;
+  white-space: nowrap;
+}
+
+.USDsummary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 15px;
+  color: White;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  width: 40%;
+}
+
+.cryptoFee {
+  color: White;
+  font-size: 15px;
+  color: White;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+.cryptoSummary {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 15px;
+  color: White;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+.cryptoSummaryThumbnail {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  align-self: center;
+}
+
+.offerSummaryDesc {
+  color: white;
+  font-size: 18px;
+}
+
+.itemSummary {
+  color: white;
+  font-size: 20px;
+  cursor: default;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feeContainer {
+  color: white;
+  font-size: 20px;
+  cursor: default;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.itemCount {
+  color: White;
+  font-weight: 900;
+  font-size: 18px;
+  cursor: default;
+}
+
+.feeText {
+  font-size: 18px;
+  font-weight: 900;
+  cursor: default;
+  margin-left: 5px;
+}
+
+.feeValue {
+  font-size: 18px;
+  font-weight: 400;
+  Color: #ff3535;
+}
+
+.tradeButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  background-color: #00c74d;
+  box-shadow: 0 10px 27px #00ff0c1a,0 -3px #00913c inset,0 2px #35d87b inset!important;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.tradeButton.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tradeButton:not(.disabled):hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.tradeConfig {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+}
+
+.cryptoHeader {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  font-weight: bold;
+  color: White;
+  padding: 5px;
+  padding-bottom: 15px;
+}
+
+.cryptoAddressContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  padding-right: 50px; /* Make room for the button */
+  padding-left: 15px;
+  background-color: #1a1c26;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: Grey; /* Change to your desired placeholder text color */
+}
+
+input:focus {
+  outline: none; /* Example: Red outline, 2 pixels wide */
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  border: none; /* Optional: removes the border */
+  background: #8b9a46; /* Optional: colors the button */
+  border-radius: 10px;
+  font-size: 16px;
+  color: White;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+}
+
+.cryptoRadio {
+  appearance: none;
+  background-color: #fff;
+  margin: 0 10px 0 0;
+  font: inherit;
+  color: currentColor;
+  width: 0.5em;
+  height: 0.5em;
+  border: 1px solid #cacece;
+  border-radius: 20%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  align-self: center;
+}
+
+.cryptoRadio:checked {
+  background-color: #03c74d;
+  border-color: #03c74d;
+}
+
+/* Hide the radio button (optional) */
+.cryptoRadio::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+
+.cryptoRadio:checked::before {
+  transform: scale(1);
+}
+
+.cryptoPrice {
+  color: White;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+  padding-right: 15px;
+}
+
+.noKYCcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.noKYC {
+  writing-mode: vertical-rl;  /* Makes the text vertical */
+  transform: rotate(180deg);  /* Rotates the text so it's readable from top to bottom */
+  background-color: #004225;
+  height: 100%;    /* Prevents the text from wrapping */
+  width: 30px;
+  align-items: center;
+  color: White;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.saveCryptoButton {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  font-family: "Space Grotesk" !important;
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #00c74d;
+  box-shadow: 0 10px 27px #00ff0c1a,0 -3px #00913c inset,0 2px #35d87b inset!important;
+}
+
+.receiptContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.networkFeeContainer {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.cryptoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}

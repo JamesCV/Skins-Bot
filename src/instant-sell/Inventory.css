@@ -1,0 +1,372 @@
+.inventoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 72%;
+  white-space: nowrap;
+  font-family: "Space Grotesk" !important;
+  color: White;
+  font-size: 18px;
+  font-weight: bold;
+  border-right: 6px solid #1a1c26;
+}
+
+.inventoryFilter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #18232a;
+  font-size: 18px;
+  color: White;
+  font-weight: 400;
+  padding-left: 20px;
+  border-bottom: 6px solid #1a1c26;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.inventoryHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 55px;
+  min-height: 52px;
+  width: 100%;
+  background-color: #18232a;
+  padding-left: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: default;
+}
+
+.inventoryHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.finalTradeValue {
+  padding-left: 5px;
+}
+
+.inventoryTitle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.inventoryValue {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 20px;
+}
+
+.inventoryHolder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #18232a;
+  padding-top: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.inventoryWindow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 98%;
+  overflow-y: scroll;
+  align-content: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 10px;
+}
+
+.inventoryItemContainer {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #1a1c26;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  max-width: 18%;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 5px;
+}
+
+.inventoryItemContainer:hover {
+  transform: translateY(-5px);
+  border: 1.5px solid #004225;
+}
+
+.inventoryItemContainer:hover .itemImage {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.inventoryItemContainer.selected {
+  position: relative;
+  background-color: #212434;
+}
+
+@media (max-width: 2100px) {
+  .inventoryItemContainer {
+    flex-basis: 13.9%;
+    max-width: 13.9%;
+  }
+}
+
+@media (max-width: 1900px) {
+  .inventoryItemContainer {
+    flex-basis: 16.2%;
+    max-width: 16.2%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .inventoryItemContainer {
+    flex-basis: 19.5%;
+    max-width: 19.5%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .inventoryItemContainer {
+    flex-basis: 24.4%;
+    max-width: 24.4%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .inventoryItemContainer {
+    flex-basis: 32.5%;
+    max-width: 32.5%;
+  }
+}
+
+@media (max-width: 800px) { /* Adjust this breakpoint as needed */
+  .inventoryItemContainer {
+    flex-basis: 49.3%; /* Now each item starts at 50% width */
+    max-width: 49.3%; /* Ensures the item doesn't grow beyond 50% of the parent width */
+  }
+}
+
+@media (max-width: 500px) { /* Adjust this breakpoint as needed */
+  .inventoryItemContainer {
+    flex-basis: 45%; /* Now each item starts at 50% width */
+    max-width: 45%; /* Ensures the item doesn't grow beyond 50% of the parent width */
+  }
+}
+
+.itemName {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.itemPrice {
+  font-size: 16px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.itemImage {
+  height: 80px;
+  width: 80px;
+  align-self: center;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.itemImage:hover {
+  transform: scale(1.05); /* slight zoom on hover */
+}
+
+.refreshInvContainer {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #004225;
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.refreshInvContainer:hover {
+  background-color: #005831;
+  cursor: pointer;
+}
+
+.refreshInv {
+  height: 25px;
+  width: 25px;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  height: 20px; /* Adjust as needed */
+}
+
+.searchBar {
+  padding-left: 50px !important;
+  align-self: center;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.dropdownHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.dropdownHeader:hover {
+    background-color: #1d2a32;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.headerThumbnail {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 85%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background: #18232a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: White;
+}
+
+.dropdownItem:hover {
+    background-color: #1d2a32;
+}
+
+.dropdownMenu .dropdownItem:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.gameThumbnail {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameThumbnail.selected {
+  background-color: blue;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.downArrow {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-icon {
+    animation: rotate 0.3s linear;
+}
+
+.filterContainer {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+}
+
+.sortContainer {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  justify-content: center;
+  font-family: "Space Grotesk" !important;
+}
+
+.gameContainer {
+  height: 100%;
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  justify-content: center;
+}
+
+.sortMenu {
+  margin-left: 5px !important;
+}
